@@ -3,7 +3,7 @@ title: "Building the Pipeline: the International Data Science in Schools Project
 author: 'Alison L. Gibbs -- <a href="mailto:alison.gibbs@utoronto.ca">University of Toronto</a><br>
 Wesley S. Burr -- <a href="mailto:wesleyburr@trentu.ca">Trent University</a> <br> 
 Robert Gould -- <a href="mailto:rgould@stat.ucla.edu">UCLA</a>'
-date: 2019-05-29 &ensp; <br><br> Slides available at <http://bit.ly/ssc19>
+date: 2019-05-29 &ensp; <br><br> Slides available at <http://bit.ly/idssp_ssc19>
 output:
   xaringan::moon_reader:
     chakra: remark-latest.min.js
@@ -79,6 +79,6 @@ class: inverse, middle
 
 - Contact us: [Email](mailto:idssp.info@gmail.com) or [Twitter](https://twitter.com/idssp1)
 - Slides created via the R package [xaringan](https://github.com/yihui/xaringan) by Yihui Xie
-- Slides and source at <http://bit.ly/ssc19>
+- Slides and source at <http://bit.ly/idssp_ssc19>
 
 <br/>
