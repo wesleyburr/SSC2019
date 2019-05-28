@@ -63,7 +63,15 @@ class: inverse
 
 <br/>
 
-<a href="./robert.key">Implementing a Data Science Course in Secondary Schools</a>
+<a href="./robert.pdf">Implementing a Data Science Course in Secondary Schools</a>
+
+---
+
+class: inverse
+
+## Wrapping Up
+
+<a href="./alison2.pdf">What's Next?</a>
 
 ---
 
