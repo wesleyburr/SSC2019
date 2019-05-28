@@ -1,0 +1,651 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+  <head>
+    <title>Case Studies in Data Science Education: Limits and Scope</title>
+    <meta charset="utf-8" />
+    <meta name="author" content="Wesley S. Burr – Trent University     wsburr     @wsburr    wesleyburr@trentu.ca" />
+    <script src="https://use.fontawesome.com/5235085b15.js"></script>
+    <link rel="stylesheet" href="example.css" type="text/css" />
+  </head>
+  <body>
+    <textarea id="source">
+class: center, middle, inverse, title-slide
+
+# Case Studies in Data Science Education: Limits and Scope
+### Wesley S. Burr – <a href="http://www.trentu.ca/math/">Trent University</a> <br> <a href="http://github.com/wesleyburr"><i class="fa fa-github fa-fw"></i>  wsburr</a><br> <a href="http://twitter.com/wsburr"> <i class="fa fa-twitter fa-fw"></i>  <span class="citation">@wsburr</span></a><br> <a href="mailto:wesleyburr@trentu.ca"><i class="fa fa-paper-plane fa-fw"></i>  wesleyburr@trentu.ca</a><br><br/>
+### 2019-05-29   <br><br> Slides available at <a href="http://bit.ly/ssc19" class="uri">http://bit.ly/ssc19</a>
+
+---
+
+
+class: inverse
+
+
+
+## Two Years
+
+The IDSSP is aimed at a full curriculum framework, computationally agnostic, for a two-year sequence in the final
+two years of a traditional "Western" education system. 
+
+&lt;p&gt;
+* for North Americans: years 11 and 12 of high school. 
+* designed so Year 1 can stand alone (perhaps as a Year 12 standalone course)
+* Year 2 flexible, designed to allow for localization and modularity
+
+---
+
+class: inverse
+
+## Year 1
+
+The first year was built to map approximately to a standard curriculum-hour level at the midpoint
+of the regions involved (e.g., 120 hours of material).
+
+&lt;p&gt;
+* Seven serial topics
+* Develop the Data Science Learning Cycle
+
+---
+
+class: inverse
+
+## Breakdown
+
+* Data Science and Me
+* Basic Tools for Exploration and Analysis: Part 1 (Single Variable)
+* Basic Tools: Part 2 (Pairs of Variables)
+* Basic Tools: Part 3 (Three+ Variables)
+* Graphs and Tables
+* Data Handling Pipeline
+* Avoiding being misled by data
+
+---
+
+class: inverse
+
+## Notes
+
+* strong emphasis on reinforcement of the cycle, each sub-unit (1.1 through 1.7)
+working through the cycle at least once
+* goal of a numerate student body by the conclusion
+* integration of ethics, data handling concerns, general societal understanding
+
+---
+
+class: inverse
+
+## Year 2
+
+The second year was designed from the outset to be modular, with more material than might reasonably be
+covered in a standard secondary course (e.g., compare with Calculus or capstone Physics in the Canadian
+education system).
+
+* Ten parallel topics
+* All build on the 7-topic first year
+* Minimal interdependency, but many common themes
+
+---
+
+class: inverse
+
+
+## Advanced Ideas!
+
+The goal with the second year was to present a broad, rather than deep, exposure to models and frameworks
+for the analysis of data
+
+* Time Series Data (Statistics)
+* Map Data (Hybrid)
+* Text Data (Hybrid)
+* Supervised Learning (Hybrid)
+* Unsupervised Learning (CS)
+
+---
+
+class: inverse
+
+## Advanced Ideas! (ctd.)
+
+* Recommender Systems (CS)
+* Interactive Visualization (Hybrid)
+* Confidence Intervals and the Bootstrap (Statistics)
+* Randomization Tests and Significance Testing (Statistics)
+* Image Data (Hybrid)
+
+---
+
+class: inverse
+
+## Composition of Team
+
+Curriculum team was comprised of statisticians and computer scientists,
+and the topics selected show that breadth.
+
+&lt;br /&gt;
+
+* naturally some push/pull on what should be considered most important
+* note that inference made it in via randomization and the bootstrap
+(no requirement of distribution theory and probability)
+* remember: the *only* pre-requisite for a course based on this material is Unit 1's course!
+
+---
+
+class: inverse
+
+## Case Studies
+
+Three case studies were developed, for the topics:
+
+&lt;br/&gt;
+
+* Time Series Data 
+* Map Data 
+* Unsupervised Learning (K-Means Clustering)
+
+&lt;br/&gt;
+--
+
+Goals?
+
+&lt;br /&gt;
+* help the *instructors* in deepening understanding of the importance and relevance of topics
+
+---
+
+class: inverse
+
+## Case Study 1: Time Series Data
+
+Time Series Data can be quite complex, even for statistics majors or graduate students - adding the
+temporal dependence structure goes quite far afield from independent samples!
+
+---
+
+class: inverse
+
+## What do we want?
+
+* understanding that data exists which has temporal structure
+* basic concepts of seasonality and trend (additive only!)
+* graphical decomposition methods (e.g., STL) - visual study
+* introduction to more complex statistical models than linear or curved regressions
+
+---
+
+class: inverse
+
+## How far can we take students?
+
+(with no understanding of joint distributions, stationarity, or stochastic processes)
+
+&lt;br/&gt;
+
+* preparation of data
+* plotting, visualizations
+* "click" analysis (trend, seasonality)
+* basic "click" forecasting (e.g., Holt-Winters)
+* telling stories with data!
+
+---
+
+class: inverse
+
+## What do we want instructors to know?
+
+* all of the above
+* where data comes from, awareness of variety
+* overall modeling: features, appropriateness of analysis methods
+* the data science cycle using time series: what kinds of questions?
+
+---
+
+class: inverse
+
+## Our Case Study
+
+The case study developed for the Time Series module starts, as we 
+encourage via the Data Science Cycle, with a question (paraphrased):
+
+&lt;p/&gt;
+&lt;br/&gt;
+
+&lt;center&gt;&lt;b&gt;
+In the context of NASA's statement that 'The world is getting warmer ...
+at a rate of 0.15 degrees C per decade since 1975', can we see this in
+data from Toronto, Ontario?
+&lt;/b&gt;&lt;/center&gt;
+
+---
+
+class: inverse
+
+## Case Study Steps
+
+* load the data
+* subset to monthly temperature averages
+* plot!
+
+---
+
+class: middle
+
+## Case Study 1: Plot 1
+
+&lt;img src="figure/time1.png" width="1000"&gt;
+
+
+---
+
+class: middle
+
+## Case Study 1: Plot 2
+
+&lt;img src="figure/time2.png" width="1000"&gt;
+
+---
+
+class: middle
+
+## Case Study 1: Plot 3
+
+&lt;img src="figure/time3.png" width="1000"&gt;
+
+---
+
+## Case Study 1: Plot 4
+
+&lt;img src="figure/time5.png" width="1000"&gt;
+
+---
+
+class: inverse
+
+## Case Study Steps
+
+* decompose using a linear fit
+* conclude with a linear regression (fit), use slope to answer question
+
+
+```r
+summary(lm(temp ~ x, data = pearson_df))$coef[2, 1:2]
+```
+`## Estimate Std. Error`
+
+`## 0.006128419 0.002868623`
+
+---
+
+class: inverse
+
+## Case Study Steps: Notes
+
+Across the decades since 1970, the monthly average temperature in
+Toronto shows an increase of `\(\sim 0.061^\circ\)`C / decade, or
+`\(\sim 0.0061^\circ\)`C / year. 
+
+&lt;br /&gt;
+
+* smaller than NASA's global estimate
+* discussion of why: local versus global
+* averaging, heat islands, climate-specific concerns
+
+---
+
+class: inverse
+
+## Case Study Steps: Notes (ctd.)
+
+The case study then concludes by using Holt-Winters to forecast two years
+into the future, giving the opportunity to discuss:
+
+&lt;br/&gt;
+
+* accuracy and prediction intervals
+* what is shown and what is not (seasonality: yes; perfect prediction: no)
+
+---
+
+class: inverse
+
+## Case Study 2: Map Data
+
+Map data *can* be even more complex than time series data, especially if **models**
+are being considered: spatio-temporal models are far too complex for consideration.
+
+Instead, this unit is aimed mostly at visualization!
+
+&lt;br /&gt;
+
+* presenting data using maps as the framework
+* exploring geographical patterns
+* integration of domain-specific knowledge for understanding
+
+---
+
+class: inverse
+
+## Maps Data
+
+* what do we want out of this section?
+* how far can we take students who have zero chance of understanding stationarity?
+* what do we want instructors to know?
+
+---
+
+class: inverse
+
+## What do we want?
+
+* exposure to the purpose of maps
+* coverage of the basic working objects on maps (edges, points, lines, distance)
+* some exposure to the concept "the map is not the [data] (territory)"
+* additional experience in data processing and manipulation - move to format suitable
+for presentation
+* additional experience with visualization as a tool for understanding
+
+---
+
+class: inverse
+
+## How far can we take students?
+
+* preparation of data
+* plotting, basic visualizations
+* overlays
+* discussion of aggregation, geographic units (counties, states, voting districts, etc.)
+* telling stories with data!
+
+---
+
+class: inverse
+
+## What do we want instructors to know?
+
+* all of the above
+* where data comes from, awareness of variety
+* ethical concerns with geotagged data, privacy
+* the data science cycle using map data: what kinds of questions are appropriate?
+
+---
+
+class: inverse
+
+## Our Case Study
+
+The case study developed for the Map Data module starts, as we 
+encourage via the Data Science Cycle, with a question (paraphrased):
+
+&lt;br/&gt;
+
+&lt;center&gt;&lt;b&gt;
+I live in Toronto, and I need to find a
+new place to live. What neighbourhood should I live in to be safest?
+&lt;/b&gt;&lt;/center&gt;
+
+---
+
+class: inverse
+
+## Case Study Steps
+
+* introduce students to the geographically localized problem
+* ask more questions: refine the primary
+* what does it mean to be "safe"?
+* what is a "neighbourhood"?
+* what city are we in?
+
+&lt;br/&gt;
+
+(for this case study, we did not use any additional criteria, but they would 
+make the case study much more interesting!)
+
+---
+
+class: inverse
+
+## Case Study Steps
+
+* get some data!
+* Census Data shapefiles for Forward Sortation Areas (post codes) - privacy!
+* Toronto OpenData portal 
+* Toronto Public Service "Public Safety Data Portal" - major crimes
+
+---
+
+class: inverse
+
+## Case Study Steps
+
+Data manipulation!
+
+* merge multiple data sources
+* discuss population weighting: absolute quantities aren't comparable!
+* population counts data from Statistics Canada
+
+---
+
+class: middle
+
+## Case Study 2: Plot 1
+
+&lt;img src="figure/map1.png" width="1000"&gt;
+
+---
+
+class: inverse
+
+## Case Study Steps
+
+* crime data: what crimes matter? localize them!
+* cross-over with Learning topics (Approximate Nearest Neighbours)
+* chloropleth with total number of crimes, 2014-2016
+
+---
+
+class: middle
+
+## Case Study 2: Plot 2
+
+&lt;img src="figure/map2.png" width="1000"&gt;
+
+---
+
+class: middle
+
+## Case Study 2: Plot 3
+
+&lt;img src="figure/map3.png" width="1000"&gt;
+
+---
+
+class: inverse
+
+## Case Study Steps: Making a Decision
+
+* identify best neighbourhoods by score: crimes per dwelling
+* visualize top 3 neighbourhoods
+
+---
+
+class: middle
+
+## Case Study 2: Plot 4
+
+&lt;img src="figure/map5.png" width="1000"&gt;
+
+---
+
+class: inverse
+
+## Case Study Steps: Making a Decision
+
+* pull FSA codes for these three
+* look them up
+* best?
+
+--
+
+&lt;br/&gt;
+
+* FSA **M3C** is in North York, and is the community of Flemingdon Park
+* a former industrial area, and is now considered light industrial, with many corporate offices located there
+
+--
+
+&lt;br /&gt;
+
+* population is 38289, with 15625 dwellings
+* a blend of different income classes
+* good place to live?
+
+---
+
+class: inverse
+
+## Some Notes
+
+* this model could easily have been done without the map
+* still would require merging data sets spatially
+* visualization via maps eases the burden, and helps with exploration
+
+--
+
+&lt;br /&gt;
+
+* **remember**: students most likely will not be able to do most/all of the coding - GUI interface,
+students can work through the logic using maps as guides and checks
+* think Gapminder, but spatially
+
+---
+
+class: inverse
+
+## Final Notes
+
+* open-ended projects are more fun, but harder to teach
+
+--
+
+* recall the fallacy of the "expert instructor": it worked for me!
+
+--
+
+* age, maturity and experience of students is limited
+
+--
+
+* lean heavily on technology, mask the heavy lifting at first, slowly pull back the curtain
+
+--
+
+* keep rigour high, but **enable** students: complex visualizations are powerful!
+
+---
+
+layout: false
+class: inverse, middle
+
+&lt;center&gt;
+&lt;a href="http://www.trentu.ca/math/"&gt;&lt;img src="figure/trent.png" style="width: 200px;"/&gt;&lt;/a&gt; &amp;emsp;&amp;emsp;
+&lt;a href="http://www.idssp.org/"&gt;&lt;img src="figure/data_sci.png" style="width: 155px;"/&gt;&lt;/a&gt; &amp;emsp;&amp;emsp;
+&lt;a href="https://creativecommons.org/licenses/by/4.0/"&gt;&lt;img src="figure/cc.png" style="width: 200px;"/&gt;&lt;/a&gt;
+&lt;/center&gt;
+
+## If you're interested, let me know - I'd love to talk more about this project!
+
+- Contact me: [Email](mailto:wesleyburr@trentu.ca) or [Twitter](https://twitter.com/wsburr)
+- Slides created via the R package [xaringan](https://github.com/yihui/xaringan) by Yihui Xie
+- Slides and source at &lt;http://bit.ly/ssc19&gt;
+
+&lt;br/&gt;
+    </textarea>
+<style data-target="print-only">@media screen {.remark-slide-container{display:block;}.remark-slide-scaler{box-shadow:none;}}</style>
+<script src="remark-latest.min.js"></script>
+<script>var slideshow = remark.create({
+"highlightStyle": "tomorrow-night-bright",
+"highlightLines": true,
+"highlightLanguage": "r"
+});
+if (window.HTMLWidgets) slideshow.on('afterShowSlide', function (slide) {
+  window.dispatchEvent(new Event('resize'));
+});
+(function(d) {
+  var s = d.createElement("style"), r = d.querySelector(".remark-slide-scaler");
+  if (!r) return;
+  s.type = "text/css"; s.innerHTML = "@page {size: " + r.style.width + " " + r.style.height +"; }";
+  d.head.appendChild(s);
+})(document);
+
+(function(d) {
+  var el = d.getElementsByClassName("remark-slides-area");
+  if (!el) return;
+  var slide, slides = slideshow.getSlides(), els = el[0].children;
+  for (var i = 1; i < slides.length; i++) {
+    slide = slides[i];
+    if (slide.properties.continued === "true" || slide.properties.count === "false") {
+      els[i - 1].className += ' has-continuation';
+    }
+  }
+  var s = d.createElement("style");
+  s.type = "text/css"; s.innerHTML = "@media print { .has-continuation { display: none; } }";
+  d.head.appendChild(s);
+})(document);
+// delete the temporary CSS (for displaying all slides initially) when the user
+// starts to view slides
+(function() {
+  var deleted = false;
+  slideshow.on('beforeShowSlide', function(slide) {
+    if (deleted) return;
+    var sheets = document.styleSheets, node;
+    for (var i = 0; i < sheets.length; i++) {
+      node = sheets[i].ownerNode;
+      if (node.dataset["target"] !== "print-only") continue;
+      node.parentNode.removeChild(node);
+    }
+    deleted = true;
+  });
+})();</script>
+
+<script>
+(function() {
+  var links = document.getElementsByTagName('a');
+  for (var i = 0; i < links.length; i++) {
+    if (/^(https?:)?\/\//.test(links[i].getAttribute('href'))) {
+      links[i].target = '_blank';
+    }
+  }
+})();
+</script>
+
+<script>
+slideshow._releaseMath = function(el) {
+  var i, text, code, codes = el.getElementsByTagName('code');
+  for (i = 0; i < codes.length;) {
+    code = codes[i];
+    if (code.parentNode.tagName !== 'PRE' && code.childElementCount === 0) {
+      text = code.textContent;
+      if (/^\\\((.|\s)+\\\)$/.test(text) || /^\\\[(.|\s)+\\\]$/.test(text) ||
+          /^\$\$(.|\s)+\$\$$/.test(text) ||
+          /^\\begin\{([^}]+)\}(.|\s)+\\end\{[^}]+\}$/.test(text)) {
+        code.outerHTML = code.innerHTML;  // remove <code></code>
+        continue;
+      }
+    }
+    i++;
+  }
+};
+slideshow._releaseMath(document);
+</script>
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+(function () {
+  var script = document.createElement('script');
+  script.type = 'text/javascript';
+  script.src  = 'https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML';
+  if (location.protocol !== 'file:' && /^https?:/.test(script.src))
+    script.src  = script.src.replace(/^https?:/, '');
+  document.getElementsByTagName('head')[0].appendChild(script);
+})();
+</script>
+  </body>
+</html>
