@@ -90,3 +90,6 @@ class: inverse, middle
 - Slides and source at <http://bit.ly/idssp_ssc19>
 
 <br/>
+
+Our thanks to Mary Thompson and the SSC Fundraising Committee for their 
+financial support for travel on this project.
